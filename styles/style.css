@@ -148,6 +148,10 @@ div {
   text-align: center;
 }
 
+.section-title_theme_dark {
+  color: white;
+}
+
 .section-subtitle {
   width: 60%;
   margin: 0;
@@ -155,6 +159,10 @@ div {
   font-size: 24px;
   font-weight: normal;
   text-align: center;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
 }
 
 .table {
@@ -167,9 +175,20 @@ div {
 
 }
 
+.table_theme_dark {
+  z-index: 1;
+}
+
 .table__cell {
   width: 250px;
   margin-top: 60px;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
 }
 
 .table__heading {
@@ -180,6 +199,10 @@ div {
   font-weight: 600;
 }
 
+.table__heading_theme_dark {
+  
+}
+
 .table__text {
   margin: 20px 0 0 0;
   padding: 0;
@@ -187,6 +210,11 @@ div {
   font-size: 18px;
   font-weight: normal;
 }
+
+.table__text_theme_dark {
+
+}
+
 
 /* Блок feynman */
 
@@ -236,10 +264,24 @@ div {
   height: 637px;
 }
 
+/* Блок kaufman */
 
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+.kaufman {
+  background-color: #1f1f1f;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 0;
+  overflow: hidden;
+}
+
+
+
+.kaufman__triangle {
+  position: absolute;
+  right: -210px;
+  top: 0;
+  width: 877px;
+  height: 877px;
 }
