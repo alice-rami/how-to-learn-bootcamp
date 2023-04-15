@@ -20,7 +20,7 @@
 }
 
 .header__title {
-  width: 730px;
+  max-width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
@@ -30,7 +30,7 @@
 }
 
 .header__subtitle {
-  width: 388px;
+  max-width: 388px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -44,11 +44,14 @@
 
 .header__link {
   color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration {
   width: 765px;
   height: 608px;
+  object-fit: contain;
+  object-position: right;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -178,6 +181,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .table_theme_dark {
@@ -223,8 +227,12 @@
 /* Блок feynman */
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
+  background-image: url(../images/feynman.png);
+  background-size: 867px 637px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -232,7 +240,7 @@
 }
 
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
   margin: 100px 0 0 0;
   line-height: 1.15;
   font-size: 120px;
@@ -257,14 +265,8 @@
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-}
-
-.feynman__image {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 867px;
-  height: 637px;
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 /* Блок kaufman */
@@ -280,6 +282,9 @@
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
   right: -210px;
   top: 0;
@@ -292,7 +297,8 @@
 .footer {
   background-color: #1f1f1f;
   color: white;
-  min-width: 350px;
+  min-height: 350px;
+  box-sizing: border-box;
   display: flex;
   justify-items: center;
   padding: 60px 0 40px;
@@ -302,8 +308,7 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
-  margin: auto;
-
+  margin: 0 auto;
 }
 
 .footer__column {
@@ -364,4 +369,3 @@
   height: 16px;
   margin-right: 10px;
 }
-
