@@ -1,7 +1,7 @@
 .video__iframe {
     object-fit: contain;
     object-position: top;
-    box-sizing: border-box;
+    border: 0;
 }
 
 .video__iframe:first-of-type {
