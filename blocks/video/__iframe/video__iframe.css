@@ -2,8 +2,11 @@
     object-fit: contain;
     object-position: top;
     border: 0;
+    width: 515px;
+    height: 316px;
+    margin-right: 20px;
 }
 
-.video__iframe:first-of-type {
-    margin-right: 20px;
+.video__iframe:nth-of-type(2n) {
+    margin-right: 0;
 }
